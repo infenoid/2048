@@ -467,13 +467,16 @@ hr {
 .above-game:after {
   content: "";
   display: block;
-  clear: both; }
+  clear: both;
+  height: 40;
+  width: 500;
+}
 
 /* Make this element an actual link in your HTML:
    <a class="back" href="https://infenoid.github.io/2048/">Back</a>
 */
 .back {
-  display: inline-block;
+  display: block;
   background: #504337;
   color: #f9f6f2;
   border: none;
@@ -484,11 +487,13 @@ hr {
   text-decoration: none;
   text-align: center;
   cursor: pointer;
-  float: inline-start;
+  float: left;
   font-weight: bold;
   -webkit-appearance: none;
   transition: opacity 150ms ease, transform 150ms ease;
   box-shadow: 0 1px 0 rgba(0,0,0,0.15);
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 /* subtle fade on hover like YouTube's subscribe button */
