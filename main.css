@@ -477,19 +477,17 @@ hr {
 */
 .back {
   display: block;
-  background: #504337;
+  background: #8a6745;
   color: #f9f6f2;
   border: none;
   border-radius: 3px;
   padding: 0 20px;
-  height: 20px;
+  height: 40px;
   line-height: 10px;
   text-decoration: none;
   text-align: center;
   cursor: pointer;
   float: left;
-  font-weight: bold;
-  -webkit-appearance: none;
   transition: opacity 150ms ease, transform 150ms ease;
   box-shadow: 0 1px 0 rgba(0,0,0,0.15);
   margin-top: 8px;
