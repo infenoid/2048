@@ -510,6 +510,21 @@ hr {
   outline-offset: 2px;
 }
 
+.restart-button:hover {
+  opacity: 0.85;
+  transform: translateY(-1px);
+}
+
+.restart-button:active {
+  opacity: 0.75;
+  transform: translateY(0);
+}
+
+.restart-button:focus {
+  outline: 2px solid rgba(255,255,255,0.15);
+  outline-offset: 2px;
+}
+
 .game-intro {
   float: left;
   line-height: 42px;
@@ -525,6 +540,8 @@ hr {
   line-height: 42px;
   display: block;
   text-align: center;
+  transition: opacity 150ms ease, transform 150ms ease;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.15);
   float: right; }
 
 .game-explanation {
