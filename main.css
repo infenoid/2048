@@ -468,8 +468,6 @@ hr {
   content: "";
   display: block;
   clear: both;
-  height: 40;
-  width: 500;
 }
 
 /* Make this element an actual link in your HTML:
