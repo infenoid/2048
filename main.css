@@ -484,7 +484,7 @@ hr {
   text-decoration: none;
   text-align: center;
   cursor: pointer;
-  float: left;
+  float: inline-start;
   font-weight: bold;
   -webkit-appearance: none;
   transition: opacity 150ms ease, transform 150ms ease;
