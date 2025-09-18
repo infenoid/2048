@@ -479,8 +479,8 @@ hr {
   border: none;
   border-radius: 3px;
   padding: 0 20px;
-  height: 40px;
-  line-height: 42px;
+  height: 20px;
+  line-height: 10px;
   text-decoration: none;
   text-align: center;
   cursor: pointer;
