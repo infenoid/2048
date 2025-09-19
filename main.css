@@ -1,16 +1,14 @@
 html, body {
-  margin: 0;
+  margin-top: 2px;
   padding: 0;
   background: #faf8ef;
   color: #776e65;
-  /* Use Comic Sans MS as requested, with common fallbacks */
   font-family: "Comic Sans MS", "Comic Sans", "Segoe UI", Tahoma, sans-serif;
   font-size: 18px; }
 
 body {
-  margin: 20px 0; }
+  margin: 0 0; }
 
-/* Removed unused selectors: .otherGames p and .title were not present in main.html */
 .heading:after {
   content: "";
   display: block;
@@ -522,6 +520,7 @@ hr {
 }
 
 .game-intro {
+  margin: 0 0 10px;
   float: left;
   line-height: 42px;
   margin-bottom: 0; }
@@ -541,7 +540,7 @@ hr {
   float: right; }
 
 .game-explanation {
-  margin-top: 30px; }
+  margin-top: 30; }
 
 @media screen and (max-width: 520px) {
   /* Mobile overrides: keep layout but scale container and tiles */
