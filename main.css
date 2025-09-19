@@ -1,8 +1,8 @@
 html, body {
   margin-top: 2px;
   padding: 0;
-  background: #faf8ef;
-  color: #776e65;
+  background: #f0fff4; /* pale mint */
+  color: #254e33; /* dark green text */
   font-family: "Comic Sans MS", "Comic Sans", "Segoe UI", Tahoma, sans-serif;
   font-size: 18px; }
 
@@ -45,7 +45,7 @@ body {
 .score-container, .best-container {
   position: relative;
   display: inline-block;
-  background: #bbada0;
+  background: #6aa76a; /* muted green */
   padding: 15px 35px;
   white-space: nowrap;
   font-size: 20px;
@@ -65,15 +65,14 @@ body {
     font-size: 13px;
     line-height: 13px;
     text-align: center;
-    color: #eee4da; }
+    color: #e6f4ea; }
   .score-container .score-addition, .best-container .score-addition {
     position: absolute;
     right: 30px;
-    color: red;
+    color: rgba(37, 78, 51, 0.9); /* dark green */
     font-size: 25px;
     line-height: 25px;
     font-weight: bold;
-    color: rgba(119, 110, 101, 0.9);
     z-index: 100;
     -webkit-animation: move-up 600ms ease-in;
     -moz-animation: move-up 600ms ease-in;
@@ -96,7 +95,7 @@ strong.important {
 
 hr {
   border: none;
-  border-bottom: 1px solid #d8d4d0;
+  border-bottom: 1px solid #cee8d9;
   margin-top: 20px;
   margin-bottom: 30px; }
 
@@ -135,7 +134,7 @@ hr {
   -ms-touch-action: none;
   user-select: none;
   touch-action: none;
-  background: #bbada0;
+  background: #6aa76a;
   border-radius: 6px;
   width: 500px;
   height: 500px;
@@ -149,7 +148,7 @@ hr {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(238, 228, 218, 0.5);
+    background: rgba(217, 240, 221, 0.5);
     z-index: 100;
     text-align: center;
     -webkit-animation: fade-in 800ms ease 1200ms;
@@ -169,7 +168,7 @@ hr {
       margin-top: 59px; }
     .game-container .game-message a {
       display: inline-block;
-      background: #8f7a66;
+        background: #8f7a66;
       border-radius: 3px;
       padding: 0 20px;
       text-decoration: none;
@@ -177,11 +176,16 @@ hr {
       height: 40px;
       line-height: 42px;
       margin-left: 9px; }
+    /* More specific selector to target the retry button and override generic styles */
+    .game-container .game-message a.retry-button {
+      background: #529173 !important;
+      color: #f9f6f2;
+    }
       .game-container .game-message a.keep-playing-button {
         display: none; }
     .game-container .game-message.game-won {
-      background: rgba(237, 194, 46, 0.5);
-      color: #f9f6f2; }
+      background: rgba(110, 190, 80, 0.5);
+      color: #f7fff7; }
       .game-container .game-message.game-won a.keep-playing-button {
         display: inline-block; }
     .game-container .game-message.game-won, .game-container .game-message.game-over {
@@ -206,7 +210,7 @@ hr {
   margin-right: 15px;
   float: left;
   border-radius: 3px;
-  background: rgba(238, 228, 218, 0.35); }
+  background: rgba(217, 240, 221, 0.35); }
   .grid-cell:last-child {
     margin-right: 0; }
 
@@ -293,72 +297,72 @@ hr {
   transition-property: transform; }
   .tile .tile-inner {
     border-radius: 3px;
-    background: #eee4da;
+    background: #e8f5e9; /* light green */
     text-align: center;
     font-weight: bold;
     z-index: 10;
     font-size: 55px; }
   .tile.tile-2 .tile-inner {
-    background: #eee4da;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
+    background: #e8f5e9;
+    box-shadow: 0 0 30px 10px rgba(120, 200, 100, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
   .tile.tile-4 .tile-inner {
-    background: #ede0c8;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
+    background: #e0f0d9;
+    box-shadow: 0 0 30px 10px rgba(120, 200, 100, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
   .tile.tile-8 .tile-inner {
-    color: #f9f6f2;
-    background: #f2b179; }
+    color: #f7fff7;
+    background: #9ad49a; }
   .tile.tile-16 .tile-inner {
-    color: #f9f6f2;
-    background: #f59563; }
+    color: #f7fff7;
+    background: #7fcf7f; }
   .tile.tile-32 .tile-inner {
-    color: #f9f6f2;
-    background: #f67c5f; }
+    color: #f7fff7;
+    background: #59c46a; }
   .tile.tile-64 .tile-inner {
-    color: #f9f6f2;
-    background: #f65e3b; }
+    color: #f7fff7;
+    background: #3fb34c; }
   .tile.tile-128 .tile-inner {
-    color: #f9f6f2;
-    background: #edcf72;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.2381), inset 0 0 0 1px rgba(255, 255, 255, 0.14286);
+    color: #f7fff7;
+    background: #b7e4a0;
+    box-shadow: 0 0 30px 10px rgba(120, 200, 100, 0.2381), inset 0 0 0 1px rgba(255, 255, 255, 0.14286);
     font-size: 45px; }
     @media screen and (max-width: 520px) {
       .tile.tile-128 .tile-inner {
         font-size: 25px; } }
   .tile.tile-256 .tile-inner {
-    color: #f9f6f2;
-    background: #edcc61;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.31746), inset 0 0 0 1px rgba(255, 255, 255, 0.19048);
+    color: #f7fff7;
+    background: #aee090;
+    box-shadow: 0 0 30px 10px rgba(120, 200, 100, 0.31746), inset 0 0 0 1px rgba(255, 255, 255, 0.19048);
     font-size: 45px; }
     @media screen and (max-width: 520px) {
       .tile.tile-256 .tile-inner {
         font-size: 25px; } }
   .tile.tile-512 .tile-inner {
-    color: #f9f6f2;
-    background: #edc850;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.39683), inset 0 0 0 1px rgba(255, 255, 255, 0.2381);
+    color: #f7fff7;
+    background: #9bdc7a;
+    box-shadow: 0 0 30px 10px rgba(120, 200, 100, 0.39683), inset 0 0 0 1px rgba(255, 255, 255, 0.2381);
     font-size: 45px; }
     @media screen and (max-width: 520px) {
       .tile.tile-512 .tile-inner {
         font-size: 25px; } }
   .tile.tile-1024 .tile-inner {
-    color: #f9f6f2;
-    background: #edc53f;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.47619), inset 0 0 0 1px rgba(255, 255, 255, 0.28571);
+    color: #f7fff7;
+    background: #84d05f;
+    box-shadow: 0 0 30px 10px rgba(120, 200, 100, 0.47619), inset 0 0 0 1px rgba(255, 255, 255, 0.28571);
     font-size: 35px; }
     @media screen and (max-width: 520px) {
       .tile.tile-1024 .tile-inner {
         font-size: 15px; } }
   .tile.tile-2048 .tile-inner {
-    color: #f9f6f2;
-    background: #edc22e;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.55556), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
+    color: #f7fff7;
+    background: #6fc542;
+    box-shadow: 0 0 30px 10px rgba(120, 200, 100, 0.55556), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
     font-size: 35px; }
     @media screen and (max-width: 520px) {
       .tile.tile-2048 .tile-inner {
         font-size: 15px; } }
   .tile.tile-super .tile-inner {
-    color: #f9f6f2;
-    background: #3c3a32;
+    color: #f7fff7;
+    background: #234b2b;
     font-size: 30px; }
     @media screen and (max-width: 520px) {
       .tile.tile-super .tile-inner {
@@ -473,8 +477,8 @@ hr {
 */
 .back {
   display: block;
-  background: #8a6745;
-  color: #f9f6f2;
+  background: #98cbe9;
+  color: #2b568d;
   border: none;
   border-radius: 3px;
   padding: 0 20px;
@@ -487,6 +491,22 @@ hr {
   transition: opacity 150ms ease, transform 150ms ease;
   box-shadow: 0 1px 0 rgba(0,0,0,0.15);
 }
+
+.retry-button {
+  background: #529173; /* match restart-button */
+  border-radius: 3px;
+  padding: 0 20px;
+  text-decoration: none;
+  color: #f9f6f2;
+  height: 40px;
+  line-height: 42px;
+  display: inline-block;
+  text-align: center;
+}
+
+.retry-button:hover { opacity: 0.85; transform: translateY(-1px); }
+.retry-button:active { opacity: 0.75; transform: translateY(0); }
+.retry-button:focus { outline: 2px solid rgba(255,255,255,0.15); outline-offset: 2px; }
 
 /* subtle fade on hover like YouTube's subscribe button */
 .back:hover {
@@ -526,7 +546,7 @@ hr {
   margin-bottom: 0; }
 
 .restart-button {
-  background: #8f7a66;
+  background: #529173;
   border-radius: 3px;
   padding: 0 20px;
   text-decoration: none;
